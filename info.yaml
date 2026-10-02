@@ -8,6 +8,8 @@
 # please be sure that the main branch contains the data you want to submit.
 # This file will be updated with more information later
 
+
+
 # ======================================================
 # Project metadata (used for documentation / review)
 # ======================================================
@@ -17,6 +19,10 @@ project:
   discord: "farihah__ahmed"
   description: "RISC-V RV32E+M+C SoC: PicoRV32 core, narrow 8-bit SRAM, AHB-Lite/APB bus, GPIO/UART/SPI, scan-configured control"
   lvs_config: "lvs_config.json"
+  gf_def_ready: false           # data ready for def generation with global foundries' pad frame
+  ws_def_ready: false           # data ready for def generation with wafer space pad frame
+  drc_ready: false              # data ready for integration and DRC
+  lvs_ready: false              # data ready for integrated LVS
 
 pins:
   - name: VSS
